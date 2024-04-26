@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color1: #FE3301;
+    --color2: #353bc5;
+}
+
+
+input {
+    @apply bg-[#FE3301] font-nohemiExtraBold w-full text-white;
+}
+
+.col-rev {
+    @apply bg-black
+}
+
+.col {
+    @apply bg-white
+
+}
+
+.input-rev {
+    @apply bg-[#000] font-nohemiExtraBold w-full;
+
+}
+
+input:focus, input:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+label {
+    @apply text-[100px] font-nohemiExtralight text-[#FE3301];
+}
+
+.filter-opt {
+    @apply lg:text-xl text-sm font-nohemiExtralight -ml-12 text-[#FE3301] 
+}
+
+/* CONTAINER  SECTIONS */
+#movies {
+    overflow-y: auto;
+    height: calc(100vh - 0rem);
+}
+
+#description {
+    display: none;
+    overflow-y: auto; 
+    height: calc(100vh - 0rem);
+
+}
+
+·movie-details {
+    display: none;
+    background: transparent;
+
+}
+
+/* FONTS  */
+
+@font-face {
+    font-family: "Nohemi";
+    src: url("../public/Nohemi-Regular-BF6438cc58b98fc.otf");
+}
+
+@font-face {
+    font-family: "Nohemi-Thin";
+    src: url("../public/Nohemi-Thin-BF6438cc577ef3b.otf");
+}
+
+@font-face {
+    font-family: "Nohemi-Extralight";
+    src: url("../public/Nohemi-ExtraLight-BF6438cc57e06d5.otf");
+}
+
+@font-face {
+    font-family: "Nohemi-ExtraBold";
+    src: url("../public/Nohemi-ExtraBold-BF6438cc5881baf.ttf");
+}
+
+@font-face {
+    font-family: "Nohemi-Black";
+    src: url("../public/Nohemi-Black-BF6438cc5874bd2.otf");
+}
+
+@font-face {
+    font-family: "Nohemi-SemiBold";
+    src: url("../public/Nohemi-SemiBold-BF6438cc588b5e5.otf");
+}
